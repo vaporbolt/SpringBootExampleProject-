@@ -32,7 +32,7 @@ class SpringProjectApplicationTests {
     public void getAudioJSON() throws Exception {
       mvc.perform(MockMvcRequestBuilders.get("/AudioStorage").accept(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
-          .andExpect(content().string(equalTo("audio storage json!")));
+          .andExpect(content().string(equalTo("no audio command json file found.")));
     }
 
 }
